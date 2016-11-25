@@ -1,0 +1,7 @@
+@value mainBg from "css/colors.css";
+
+.appContainer {
+  height: 100%;
+  background-color: mainBg;
+  color: color(mainBg lightness(+20%));
+}
