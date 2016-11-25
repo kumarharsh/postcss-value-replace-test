@@ -5,7 +5,11 @@ import css from './app.css';
 
 class App extends React.Component {
   render() {
-    return React.createElement('div', {className: css.appContainer}, ["This is the App"]);
+    return React.createElement('div', {
+      className: css.appContainer
+    }, [
+      "This is the App"
+    ]);
   }
 }
 

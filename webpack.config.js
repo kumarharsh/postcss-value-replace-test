@@ -36,6 +36,13 @@ var config = {
     ],
   },
 
+  postcss: (webpack) => {
+    return [
+      require('postcss-modules-values-replace')({fs: webpack._compiler.inputFileSystem}),
+      require('postcss-color-function'),
+    ];
+  },
+
   resolve: {
     modulesDirectories: ['shared', 'node_modules'],
     extensions: ['', '.js'],
